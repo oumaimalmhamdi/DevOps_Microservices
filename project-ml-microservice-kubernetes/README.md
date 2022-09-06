@@ -48,3 +48,28 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+
+### Included files in this repository
+
+Dockerfile:	to build and run the application
+
+Makefile: includes instructions on environment setup and lint tests
+
+README.md: overview of the project
+
+kubernetes.out.txt: contains the output from the run_kubernetes.sh
+
+docker_out.txt: contains the output from the run_docker.sh
+
+app.py: the main application
+
+make_prediction.sh: script serving to send a GET prediction call to the app.py
+
+requirements.txt conatins all the pip packages to be installed
+
+run_docker.sh: script containing commands to run app using docker
+
+run_kubernetes.sh: script to  An easy run the application using K8S
+
+upload_docker.sh: script used to easilly upload docker image to DockerHub
